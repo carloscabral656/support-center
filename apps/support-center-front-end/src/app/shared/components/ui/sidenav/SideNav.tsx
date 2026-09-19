@@ -51,7 +51,7 @@ export const SideNav = () => {
   ];
 
   return (
-    <aside className="w-60 h-full bg-[#F4F5F7]">
+    <aside className="w-60 h-full flex flex-col bg-[#F4F5F7]">
       <div className="p-3">
         <img src="support-center-logo.png" alt="Logo do Support Center" srcset="" />
       </div>
@@ -75,7 +75,7 @@ export const SideNav = () => {
         })}
       </div>
 
-      <div className="flex flex-col p-2 gap-2 border-t border-ink-150">
+      <div className="flex flex-col p-2 gap-2 border-t border-ink-150 mt-auto">
         <div className="grid grid-cols-6 gap-1">
           <div className="col-span-1 flex items-center justify-center">
             <UserIconComponent userName="Carlos Eduardo" />
@@ -83,7 +83,7 @@ export const SideNav = () => {
 
           <div className="col-span-5 flex flex-col pl-2">
             <span className="font-bold text-[14px]">Carlos Eduardo</span>
-            <span className="text-[14px] text-ink-300">Suporte de TI</span>
+            <span className="text-[12px] text-ink-300">Suporte de TI</span>
           </div>
         </div>
       </div>
