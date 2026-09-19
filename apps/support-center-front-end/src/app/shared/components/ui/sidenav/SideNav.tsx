@@ -1,6 +1,7 @@
 import { Button } from '../../forms/Button';
 import { Input } from '../../forms/Input';
 import { SideNavItem } from './SideNavItem';
+import { MdOutlineSearch } from 'react-icons/md';
 
 export const SideNav = () => {
   const itens: { icon: string; text: string }[] = [
@@ -45,9 +46,9 @@ export const SideNav = () => {
       <div className="p-3">SupportCenter</div>
       <hr className="text-ink-150" />
 
-      <div>
-        <Button />
-        <Input />
+      <div className="flex flex-col p-2 gap-2">
+        <Button>New Ticket</Button>
+        <Input placeholder="Pesquise" leftIcon={<MdOutlineSearch />} />
       </div>
 
       <div className="flex flex-col p-2 gap-2">
