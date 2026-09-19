@@ -49,7 +49,8 @@
         "componentTestingTargetName": "component-test",
         "ciTargetName": "e2e-ci"
       }
-    }
+    },
+    "@nx-go/nx-go"
   ],
   "nxCloudId": "6aadfb932bd77fffe5060abe",
   "analytics": true,
