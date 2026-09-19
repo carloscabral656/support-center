@@ -1,24 +1,28 @@
+import { ReactNode } from 'react';
 import { Button } from '../../forms/Button';
 import { Input } from '../../forms/Input';
 import { SideNavItem } from './SideNavItem';
 import { MdOutlineSearch } from 'react-icons/md';
+import { MdDashboardCustomize } from 'react-icons/md';
+import { MdList } from 'react-icons/md';
+import { MdOutlineInbox } from 'react-icons/md';
 
 export const SideNav = () => {
-  const itens: { icon: string; text: string }[] = [
+  const itens: { icon: ReactNode; text: string }[] = [
     {
-      icon: 'teste',
+      icon: <MdDashboardCustomize />,
       text: 'Dashboard',
     },
     {
-      icon: 'teste',
+      icon: <MdList />,
       text: 'My Tickets',
     },
     {
-      icon: 'teste',
+      icon: <MdList />,
       text: 'All Tickets',
     },
     {
-      icon: 'teste',
+      icon: <MdOutlineInbox />,
       text: 'Unassigned',
     },
   ];

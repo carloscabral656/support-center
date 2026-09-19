@@ -7,8 +7,9 @@ export interface sideNavItemProps {
 
 export const SideNavItem = ({ icon, label }: sideNavItemProps) => {
   return (
-    <div className="rounded-sm border px-2">
-      {icon} {label}
+    <div className="flex gap-2 items-center rounded-sm color-ink-700 hover:bg-accent-tint hover:font-semibold cursor-pointer text-[14px] pr-2 py-1">
+      {icon}
+      {label}
     </div>
   );
 };
