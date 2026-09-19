@@ -1,11 +1,11 @@
-// Uncomment this line to use CSS modules
-// import styles from './app.module.css';
-import NxWelcome from "./nx-welcome";
-
-import { Route, Routes, Link } from "react-router-dom";
+import { SideNav } from './shared/components/ui/sidenav/SideNav';
 
 export function App() {
-  return <div></div>;
+  return (
+    <div className="w-screen h-screen">
+      <SideNav />
+    </div>
+  );
 }
 
 export default App;
