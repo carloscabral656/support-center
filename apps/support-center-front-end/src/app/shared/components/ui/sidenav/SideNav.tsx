@@ -6,6 +6,7 @@ import { MdOutlineSearch } from 'react-icons/md';
 import { MdDashboardCustomize } from 'react-icons/md';
 import { MdList } from 'react-icons/md';
 import { MdOutlineInbox } from 'react-icons/md';
+import { SideNavUrgencyItem, Urgency } from './SideNavUrgencyItem';
 
 export const SideNav = () => {
   const itens: { icon: ReactNode; text: string }[] = [
@@ -28,20 +29,20 @@ export const SideNav = () => {
   ];
 
   const viewsItens: {
-    urgent: string;
-    text: string;
+    urgent: Urgency;
+    label: string;
   }[] = [
     {
-      urgent: '',
-      text: 'Urgent queue',
+      urgent: 'low',
+      label: 'Urgent queue',
     },
     {
-      urgent: '',
-      text: 'Idle > 24h',
+      urgent: 'medium',
+      label: 'Idle > 24h',
     },
     {
-      urgent: '',
-      text: 'Closed this week',
+      urgent: 'low',
+      label: 'Closed this week',
     },
   ];
 
@@ -61,9 +62,10 @@ export const SideNav = () => {
         })}
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col p-2 gap-2">
+        <h2 className="">Views</h2>
         {viewsItens.map((i) => {
-          return <div>{i.text}</div>;
+          return <SideNavUrgencyItem label={i.label} urgency={i.urgent} />;
         })}
       </div>
     </aside>
