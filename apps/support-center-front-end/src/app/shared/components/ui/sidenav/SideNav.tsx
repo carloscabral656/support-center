@@ -53,7 +53,7 @@ export const SideNav = () => {
   return (
     <aside className="w-60 h-full flex flex-col bg-[#F4F5F7]">
       <div className="p-3">
-        <img src="support-center-logo.png" alt="Logo do Support Center" srcset="" />
+        <img src="support-center-logo.png" alt="Logo do Support Center" />
       </div>
       <hr className="text-ink-150" />
 
